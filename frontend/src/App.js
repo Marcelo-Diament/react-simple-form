@@ -1,3 +1,4 @@
+import Form from './components/Form'
 import logo from './logo.svg';
 import './App.css';
 
@@ -9,13 +10,7 @@ function App() {
         <h1 className="App-title">Simple Form</h1>
       </header>
       <main className="App-main">
-        <form action="" method="get">
-          <label htmlFor="name">Nome Completo</label>
-          <input type="text" name="name" key="name"/>
-          <label htmlFor="email">Email</label>
-          <input type="email" name="email" key="email"/>
-          <button>Enviar</button>
-        </form>
+        <Form/>
       </main>
     </div>
   );
