@@ -31,7 +31,7 @@ const FormController = ({ ...props }) => {
         onSubmit={handleSubmit}
       >
         {inputs.map((input) => {
-          const { name, type, label, required } = input
+          const { name, type, label, required, widthPct } = input
           return (
             <Input
               name={name}
@@ -39,6 +39,7 @@ const FormController = ({ ...props }) => {
               label={label}
               key={name}
               required={required}
+              widthPct={widthPct}
               handleBlurValue={handleInputUpdate}
             />
           )

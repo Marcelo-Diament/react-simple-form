@@ -1,11 +1,17 @@
 import React from 'react'
 
 const Input = ({ ...props }) => {
-  const { label, name, type, required, handleBlurValue } = props
+  const { label, name, type, required, widthPct, handleBlurValue } = props
   return (
-    <div className="form-input">
+    <div className="form-input" style={{ flexBasis: `${widthPct}%` }}>
       <label htmlFor={name}>{label}</label>
-      <input type={type} name={name} id={name} required={required} onBlur={handleBlurValue} />
+      <input
+        type={type}
+        name={name}
+        id={name}
+        required={required}
+        onBlur={handleBlurValue}
+      />
     </div>
   )
 }
