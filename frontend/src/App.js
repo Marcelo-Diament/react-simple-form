@@ -4,6 +4,21 @@ import logo from './logo.svg';
 import './App.css';
 
 function App() {
+  const inputs = [
+    {
+      label: 'Nome Completo',
+      name: 'name',
+      type: 'text',
+      required: false
+    },
+    {
+      label: 'Email',
+      name: 'email',
+      type: 'email',
+      required: true
+    }
+  ]
+
   return (
     <div className="App">
       <header className="App-header">
@@ -15,18 +30,18 @@ function App() {
           action="/"
           method="GET"
         >
-          <Input
-            label="Nome Completo"
-            name="name"
-            type="text"
-            required={false}
-          />
-          <Input
-            label="Email"
-            name="email"
-            type="email"
-            required={true}
-          />
+          {inputs.map((input) => {
+            const { name, type, label, required } = input
+            return (
+              <Input
+                name={name}
+                type={type}
+                label={label}
+                key={name}
+                required={required}
+              />
+            )
+          })}
           <button>Enviar</button>
         </Form>
       </main>
