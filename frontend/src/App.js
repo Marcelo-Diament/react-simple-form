@@ -23,42 +23,42 @@ function App() {
       name: 'email',
       type: 'email',
       required: true,
-      widthPct: '60'
+      widthPct: '50'
     },
     {
       label: 'Idade',
       name: 'age',
       type: 'number',
       required: false,
-      widthPct: '15'
+      widthPct: '25'
     },
     {
       label: 'Nascimento',
       name: 'birthday',
       type: 'date',
       required: false,
-      widthPct: '15'
+      widthPct: '25'
     },
     {
       label: 'Cor Preferida',
       name: 'preferedColor',
       type: 'color',
       required: false,
-      widthPct: '10'
+      widthPct: '12'
     },
     {
       label: 'Início do Expediente',
       name: 'workhoursStart',
       type: 'time',
       required: false,
-      widthPct: '33'
+      widthPct: '40'
     },
     {
       label: 'Final do Expediente',
       name: 'workhoursEnd',
       type: 'time',
       required: false,
-      widthPct: '33'
+      widthPct: '40'
     }
   ]
 
