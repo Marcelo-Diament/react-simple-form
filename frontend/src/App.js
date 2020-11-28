@@ -1,5 +1,4 @@
-import Form from './components/Form'
-import Input from './components/Input'
+import FormController from './components/FormController'
 import logo from './logo.svg';
 import './App.css';
 
@@ -26,24 +25,11 @@ function App() {
         <h1 className="App-title">Simple Form</h1>
       </header>
       <main className="App-main">
-        <Form
+        <FormController
           action="/"
           method="GET"
-        >
-          {inputs.map((input) => {
-            const { name, type, label, required } = input
-            return (
-              <Input
-                name={name}
-                type={type}
-                label={label}
-                key={name}
-                required={required}
-              />
-            )
-          })}
-          <button>Enviar</button>
-        </Form>
+          inputs={inputs}
+        />
       </main>
     </div>
   );
