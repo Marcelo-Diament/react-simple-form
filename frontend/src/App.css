@@ -54,6 +54,10 @@
   padding: var(--padding);
 }
 
+.App-main form .form-input {
+  display: flex;
+  flex-flow: column nowrap;
+}
 .App-main form label {
   text-align: left;
   margin-top: 16px;
