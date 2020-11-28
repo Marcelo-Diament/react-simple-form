@@ -1,6 +1,6 @@
 {
-  "short_name": "React App",
-  "name": "Create React App Sample",
+  "short_name": "React Simple Form",
+  "name": "A 'Pure' ReactJS Form",
   "icons": [
     {
       "src": "favicon.ico",
