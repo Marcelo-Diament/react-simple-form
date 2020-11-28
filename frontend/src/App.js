@@ -6,8 +6,9 @@ function App() {
     <div className="App">
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
+        <h1 className="App-title">Simple Form</h1>
       </header>
-      <main>
+      <main className="App-main">
         <form action="" method="get">
           <label htmlFor="name">Nome Completo</label>
           <input type="text" name="name" key="name"/>
