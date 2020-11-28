@@ -18,11 +18,17 @@ const FormController = ({ ...props }) => {
     }
   }
 
+  const handleSubmit = (e) => {
+    e.preventDefault()
+    console.log(formValues)
+  }
+
   return (
     <>
       <Form
         action={action}
         method={method}
+        onSubmit={handleSubmit}
       >
         {inputs.map((input) => {
           const { name, type, label, required } = input
