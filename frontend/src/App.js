@@ -19,13 +19,13 @@ function App() {
             label="Nome Completo"
             name="name"
             type="text"
-            required="false"
+            required={false}
           />
           <Input
             label="Email"
             name="email"
             type="email"
-            required="true"
+            required={true}
           />
           <button>Enviar</button>
         </Form>
