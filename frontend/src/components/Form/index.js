@@ -5,7 +5,7 @@ const Form = () => (
     <label htmlFor="name">Nome Completo</label>
     <input type="text" name="name" key="name" />
     <label htmlFor="email">Email</label>
-    <input type="email" name="email" key="email" />
+    <input type="email" name="email" key="email" required/>
     <button>Enviar</button>
   </form>
 )
