@@ -20,7 +20,8 @@ const FormController = ({ ...props }) => {
 
   const handleSubmit = (e) => {
     e.preventDefault()
-    console.log(formValues)
+    localStorage.setItem('formResults', JSON.stringify(formValues))
+    console.table(formValues)
   }
 
   return (

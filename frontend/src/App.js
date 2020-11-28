@@ -9,35 +9,28 @@ function App() {
       name: 'name',
       type: 'text',
       required: true,
-      widthPct: '50'
+      widthPct: '35'
     },
     {
       label: 'Sobrenome',
       name: 'lastname',
       type: 'text',
       required: false,
-      widthPct: '50'
+      widthPct: '35'
+    },
+    {
+      label: 'Site',
+      name: 'site',
+      type: 'url',
+      required: false,
+      widthPct: '30'
     },
     {
       label: 'Email',
       name: 'email',
       type: 'email',
       required: true,
-      widthPct: '50'
-    },
-    {
-      label: 'Idade',
-      name: 'age',
-      type: 'number',
-      required: false,
-      widthPct: '25'
-    },
-    {
-      label: 'Nascimento',
-      name: 'birthday',
-      type: 'date',
-      required: false,
-      widthPct: '25'
+      widthPct: '35'
     },
     {
       label: 'Cor Preferida',
@@ -47,18 +40,46 @@ function App() {
       widthPct: '12'
     },
     {
+      label: 'Idade',
+      name: 'age',
+      type: 'number',
+      required: false,
+      widthPct: '15'
+    },
+    {
+      label: 'Nascimento',
+      name: 'birthday',
+      type: 'date',
+      required: false,
+      widthPct: '25'
+    },
+    {
       label: 'Início do Expediente',
       name: 'workhoursStart',
       type: 'time',
       required: false,
-      widthPct: '40'
+      widthPct: '15'
     },
     {
       label: 'Final do Expediente',
       name: 'workhoursEnd',
       type: 'time',
       required: false,
-      widthPct: '40'
+      widthPct: '15'
+    },
+    {
+      label: 'Senha Cartão',
+      name: 'cardPass',
+      type: 'password',
+      required: false,
+      widthPct: '10'
+    },
+    {
+      label: 'Validade Cartão',
+      name: 'validUntil',
+      type: 'month',
+      required: false,
+      widthPct: '10'
     }
   ]
 
