@@ -4,6 +4,10 @@
   --padding: 24px;
 }
 
+*::-webkit-calendar-picker-indicator {
+  filter: invert(48%) sepia(47%) saturate(3207%) hue-rotate(161deg) brightness(132%) contrast(65%);
+}
+
 .App {
   text-align: center;
 }
