@@ -23,21 +23,28 @@ function App() {
       name: 'email',
       type: 'email',
       required: true,
-      widthPct: '75'
+      widthPct: '60'
     },
     {
       label: 'Idade',
       name: 'age',
       type: 'number',
       required: false,
-      widthPct: '25'
+      widthPct: '15'
     },
     {
       label: 'Nascimento',
       name: 'birthday',
       type: 'date',
       required: false,
-      widthPct: '33'
+      widthPct: '15'
+    },
+    {
+      label: 'Cor Preferida',
+      name: 'preferedColor',
+      type: 'color',
+      required: false,
+      widthPct: '10'
     },
     {
       label: 'Início do Expediente',
@@ -52,20 +59,6 @@ function App() {
       type: 'time',
       required: false,
       widthPct: '33'
-    },
-    {
-      label: 'Cor Preferida',
-      name: 'preferedColor',
-      type: 'color',
-      required: false,
-      widthPct: '20'
-    },
-    {
-      label: 'Cor Preferida',
-      name: 'preferedColor',
-      type: 'color',
-      required: false,
-      widthPct: '20'
     }
   ]
 
