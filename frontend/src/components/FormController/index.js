@@ -44,7 +44,9 @@ const FormController = ({ ...props }) => {
             />
           )
         })}
-        <button>Enviar</button>
+        <div className="button-container">
+          <button>Enviar</button>
+        </div>
       </Form>
     </>
   )

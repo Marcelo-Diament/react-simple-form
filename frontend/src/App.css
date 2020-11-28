@@ -80,14 +80,19 @@
   outline: none;
 }
 
-.App-main form button {
+.App-main form .button-container {
+  display: block;
+  flex: 1 0 100%;
+  margin: 8px auto 16px;
+}
+
+.App-main form .button-container button {
   background-color: var(--light-blue);
   border: none;
   border-radius: 20px;
   color: var(--dark-gray);
   font-size: 1.25rem;
   font-weight: bold;
-  margin: 8px auto 16px;
   padding: 8px var(--padding);
 }
 
