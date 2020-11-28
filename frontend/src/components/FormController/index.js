@@ -1,9 +1,9 @@
-import React, { useState } from 'react'
+import React from 'react'
 import Form from '../Form'
 import Input from '../Input'
 
 const FormController = ({ ...props }) => {
-  const { action, method, inputs } = props  
+  const { action, method, inputs } = props
 
   return (
     <>
