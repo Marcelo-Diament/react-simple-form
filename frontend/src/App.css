@@ -48,6 +48,7 @@
   color: white;
   display: flex;
   flex-flow: row wrap;
+  justify-content: space-between;
   margin: 16px auto;
   max-width: 80vw;
   padding: var(--padding);
@@ -56,6 +57,9 @@
 .App-main form .form-input {
   display: flex;
   flex-flow: column nowrap;
+  flex-grow: 1;
+  flex-shrink: 1;
+  padding: 8px;
 }
 
 .App-main form label {
