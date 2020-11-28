@@ -62,9 +62,14 @@
 .App-main form input {
   background-color: var(--dark-gray);
   border: 1px solid var(--light-blue);
-  border-radius: 16px;
-  height: 32px;
+  border-radius: 20px;
+  color: white;
   margin: 8px 0 16px;
+  padding: 8px 12px;
+}
+
+.App-main form input:focus {
+  outline: none;
 }
 
 .App-main form button {
