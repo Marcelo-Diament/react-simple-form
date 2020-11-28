@@ -1,9 +1,22 @@
-import React from 'react'
+import React, { useState } from 'react'
 import Form from '../Form'
 import Input from '../Input'
 
 const FormController = ({ ...props }) => {
   const { action, method, inputs } = props
+  const [formValues, setFormValues] = useState({})
+
+  const handleInputUpdate = (e) => {
+    let lastFormValues = formValues,
+      { name: inputName, value: inputValue } = e.target
+    if (inputValue.length) {
+      lastFormValues[inputName] = inputValue
+      setFormValues(lastFormValues)
+    } else {
+      delete lastFormValues[inputName]
+      setFormValues(lastFormValues)
+    }
+  }
 
   return (
     <>
@@ -20,6 +33,7 @@ const FormController = ({ ...props }) => {
               label={label}
               key={name}
               required={required}
+              handleBlurValue={handleInputUpdate}
             />
           )
         })}
